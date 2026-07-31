@@ -278,7 +278,7 @@ still open.
 | **Evidence and review** | **Demonstrated:** synthetic F-36 projection, canonical-active recall, candidate/review separation, and a bounded accepted/rejected/pending human-review slice. | Complete independent annotations and broader adjudication before drawing corpus-wide quality conclusions. |
 | **Response path** | **In integration:** bounded answer, clarify, deflect, error, citation, selected-QRA, and visible-answer admission receipts exist on the governed path. | Remove or govern direct recall-cache release, raw QuerySpec rendering, and legacy Tau fallback; extend reviewed-only reuse across governed paths. |
 | **Voice** | **In integration:** bounded direct-speak rendering consumes the Memory delivery plan and produces exact-text audio artifacts. | Close authoritative listener/journal projection, playback lineage, physical microphone capture, and the complete multi-round voice loop. |
-| **Client demo** | **Prepared-host ready:** deterministic route, preflight, route capture, and evidence-bundle tooling exist, and [issue #38](https://github.com/grahama1970/sparta/issues/38) closed on a passing preflight bound to commit `c60318363` (`passed=true`, `failed_gates=[]`, `working_tree_clean=true`, `mocked=false`). | Rerun the preflight against each commit actually demonstrated; the receipt binds to one exact commit, not to the branch. |
+| **Client demo** | **Prepared-host ready:** deterministic route, preflight, route capture, and evidence-bundle tooling exist, and issue #38 closed on a passing preflight bound to commit `c60318363` (`passed=true`, `failed_gates=[]`, `working_tree_clean=true`, `mocked=false`). | Rerun the preflight against each commit actually demonstrated; the receipt binds to one exact commit, not to the branch. |
 | **Deployment and governance** | **In integration:** portable Python metadata and an install doctor exist. | Verify a fresh-clone setup; close managed and disconnected deployment, security reporting, contribution, credential, and licensing review. |
 
 ### Dated Proof Points
@@ -303,11 +303,11 @@ count with its population and dated source artifact.
 
 | Milestone | Why it matters |
 | --- | --- |
-| **Independent corpus review** | Complete the human annotation and adjudication packet under [#35](https://github.com/grahama1970/sparta/issues/35), then regenerate the statistical report under [#7](https://github.com/grahama1970/sparta/issues/7). |
+| **Independent corpus review** | Complete the human annotation and adjudication packet under #35, then regenerate the statistical report under #7. |
 | **Response-route convergence** | Make the governed Memory/Tau path authoritative across the visible Console and remove the named transitional release paths. |
 | **QRA reasoning and reuse** | Complete the reasoning-field repair and add reviewed-only predicates to remaining lineage-reuse paths. |
 | **Decision authority in Global Posture** | Back adjudication, evidence rejection, signoff, and risk acceptance with governed backend contracts rather than disabled or candidate-only controls. |
-| **Voice, setup, and deployment** | Finish the authoritative voice loop under [#2](https://github.com/grahama1970/sparta/issues/2), verify a clean-machine install, and publish the licensing, security, contribution, managed, and disconnected deployment paths. |
+| **Voice, setup, and deployment** | Finish the authoritative voice loop under #2, verify a clean-machine install, and publish the licensing, security, contribution, managed, and disconnected deployment paths. |
 
 Governed F-36 full-corpus answering, adjudication, and publication remain in
 integration. Unit tests, adversarial checks, and bounded live probes are real
