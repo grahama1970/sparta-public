@@ -16,6 +16,15 @@ Start with a threat, control, requirement, component, supplier, test, or finding
 Sparta Explorer shows the relevant evidence, how the relationships were derived,
 what remains uncertain, and which decision still belongs to a person.
 
+> **About this repository.** This is the public product overview for Sparta
+> Explorer — the README and its screenshots, nothing else. The implementation,
+> data pipelines, evidence receipts, and issue history live in a private
+> repository, and the underlying graph-memory engine lives in a separate private
+> repository. Documents referenced below (architecture notes, evidence proofs,
+> contribution and security policy) are part of that private repository and are
+> named here for context rather than linked. Design partners can be given access
+> on request.
+
 It helps a team answer three practical questions:
 
 - **Why do we believe this?**
@@ -107,7 +116,7 @@ Live local capture, 2026-07-21, source commit `c777a9fb8`.*
 
 Adjacency is never proof. Every relationship keeps its direction, release,
 source, and review state. See the
-[F-36 demonstration](docs/product/F36_DEMONSTRATION.md) for the full role
+F-36 demonstration for the full role
 walkthrough.
 
 ## Why Sparta Explorer
@@ -138,8 +147,8 @@ Three boundaries make that useful:
   approval, risk acceptance, certification, or signoff authority to the model.
 
 The deeper product lineage and category position are described in
-[Origins](docs/product/ORIGINS.md) and
-[Positioning](docs/product/POSITIONING.md).
+Origins and
+Positioning.
 
 ## Why Collaborate Now
 
@@ -193,7 +202,7 @@ an answer; transitional branches are still being converged. Live local capture,
 *Questions, answers, control bindings, gate state, and human review remain
 inspectable together. A known reasoning-field defect stays visible and is
 tracked in
-[QRA governance](docs/architecture/QRA_GOVERNANCE.md#reasoning-field-repair).
+QRA governance.
 Live local capture, 2026-07-30, source commit `26523b2a4`.*
 
 ### Supply Chain
@@ -251,10 +260,10 @@ authoritative sources and program artifacts
 <img src="docs/assets/sparta-explorer-response-flow.webp" alt="Conceptual Sparta Explorer response flow from current-turn intent and scoped evidence to answer, clarification, deflection, or fail-closed error." width="100%">
 
 *Conceptual contract view. The semantic authority is the
-[SPARTA Answerability Contract](docs/architecture/SPARTA_ANSWERABILITY_CONTRACT.md);
+SPARTA Answerability Contract;
 implementation details are in
-[How Sparta Works — Deep Dive](docs/architecture/HOW_SPARTA_WORKS.md) and the
-[anti-hallucination design](docs/architecture/ANTI_HALLUCINATION.md).*
+How Sparta Works — Deep Dive and the
+anti-hallucination design.*
 
 ## Current Status and Closure Gates
 
@@ -274,10 +283,10 @@ still open.
 
 ### Dated Proof Points
 
-- The [issue #20 proof](docs/evidence/f36_sparta_quality_review/issue20_qra_provenance_20260729T1530Z/proof.md) records 2,180 active canonical QRAs, 2,180 aliases, 5,046 quarantined records, zero duplicate active semantic identities, and expected identity at rank 1 for the 2026-07-29 snapshot.
-- The [issue #6 proof](docs/evidence/f36_answerable_cae/acceptance/issue6_authorization_20260729T134642Z/proof.md) records one accepted decision, one rejected decision, one pending decision, one accepted evidence case, two reviewed overlays, and one compliance-credit unit for the bounded 2026-07-29 slice.
-- The [Sparta Chat aggregate receipt](docs/evidence/sparta_chat_campaign_summary/20260721T202605Z-aggregate.json) records 115 broad browser cases and 35 interaction cases for the dated local campaign.
-- The [current-turn receipt](docs/evidence/sparta_answerability_current_turn/20260721T150458Z/summary.json), [exact-decision receipt](docs/evidence/sparta_answerability_gate02/20260721T150503Z/summary.json), and [voice-parity receipt](docs/evidence/sparta_chatterbox_voice_parity/20260721T150529Z/summary.json) demonstrate the bounded answerability and direct-speak routes.
+- The issue #20 proof records 2,180 active canonical QRAs, 2,180 aliases, 5,046 quarantined records, zero duplicate active semantic identities, and expected identity at rank 1 for the 2026-07-29 snapshot.
+- The issue #6 proof records one accepted decision, one rejected decision, one pending decision, one accepted evidence case, two reviewed overlays, and one compliance-credit unit for the bounded 2026-07-29 slice.
+- The Sparta Chat aggregate receipt records 115 broad browser cases and 35 interaction cases for the dated local campaign.
+- The current-turn receipt, exact-decision receipt, and voice-parity receipt demonstrate the bounded answerability and direct-speak routes.
 
 `canonical-active` means deduplicated, provenance-filtered, visible, and retrieval-eligible.
 It does not mean expert-approved, implemented, or compliance-credited.
@@ -337,7 +346,7 @@ Then follow one short evidence thread:
 4. Ask a bounded question in the docked **Console** and inspect the route and citations beside the surface that prompted it.
 
 The route, gates, and frozen evidence bundle are documented in the
-[client-demo guide](docs/client-demo/README.md). A `DEGRADED` or `BLOCKED`
+client-demo guide. A `DEGRADED` or `BLOCKED`
 readiness state on that surface is a truthful result, not a failed demo.
 
 ## Project Integration
@@ -368,14 +377,14 @@ records or decisions.
 
 | Read this | For |
 | --- | --- |
-| [Product origins](docs/product/ORIGINS.md) | The evidence/argument/claim framing and why authority boundaries matter. |
-| [Product positioning](docs/product/POSITIONING.md) | How Sparta Explorer sits beside SPARTA, GRC/RMF, OSCAL, PLM, grounded copilots, and local platforms. |
-| [Synthetic F-36 demonstration](docs/product/F36_DEMONSTRATION.md) | The program, engineering, supplier, test, and operational evidence thread. |
-| [SPARTA Answerability Contract](docs/architecture/SPARTA_ANSWERABILITY_CONTRACT.md) | The semantic contract for answer, clarify, deflect, and fail-closed error. |
-| [How Sparta Works — Deep Dive](docs/architecture/HOW_SPARTA_WORKS.md) | Ingestion, routing, monitoring, and text/voice delivery. |
-| [QRA governance](docs/architecture/QRA_GOVERNANCE.md) | Candidate lifecycle, reasoning repair, review gates, and reuse boundaries. |
-| [Client-demo guide](docs/client-demo/README.md) | The deterministic prepared-host route, preflight, captures, and evidence bundle. |
-| [Evidence receipts](docs/evidence/) | Dated proof artifacts cited by this README. |
+| Product origins | The evidence/argument/claim framing and why authority boundaries matter. |
+| Product positioning | How Sparta Explorer sits beside SPARTA, GRC/RMF, OSCAL, PLM, grounded copilots, and local platforms. |
+| Synthetic F-36 demonstration | The program, engineering, supplier, test, and operational evidence thread. |
+| SPARTA Answerability Contract | The semantic contract for answer, clarify, deflect, and fail-closed error. |
+| How Sparta Works — Deep Dive | Ingestion, routing, monitoring, and text/voice delivery. |
+| QRA governance | Candidate lifecycle, reasoning repair, review gates, and reuse boundaries. |
+| Client-demo guide | The deterministic prepared-host route, preflight, captures, and evidence bundle. |
+| Evidence receipts | Dated proof artifacts cited by this README. |
 
 Developer entry points are `explorer/` for the Vite/TypeScript application,
 `src/sparta/` for corpus and pipeline code, `scripts/` for operational and
@@ -405,9 +414,9 @@ customer, or otherwise unauthorized material.
 Unless otherwise noted, original Sparta Explorer software and documentation are
 licensed under the [Apache License 2.0](LICENSE). Bundled third-party data,
 frameworks, assets, and dependencies retain their own terms and are inventoried
-in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md). Contribution and
-security-reporting routes are documented in [CONTRIBUTING.md](CONTRIBUTING.md)
-and [SECURITY.md](SECURITY.md).
+in THIRD_PARTY_NOTICES.md. Contribution and
+security-reporting routes are documented in CONTRIBUTING.md
+and SECURITY.md.
 
 <details>
 <summary>Maintainer claim-hygiene check</summary>
